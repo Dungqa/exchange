@@ -12,12 +12,16 @@ function myFunction() {
 
     if (a == "VND" && b == "USD") {
         ketqua = exchange1(x);
-    } if (a == "USD" && b == "VND") {
+    }
+    if (a == "USD" && b == "VND") {
         ketqua = exchange2(x);
-    }if(a == "VND" && b == "VND"){
-        ketqua = x.value
-    }if(a == "USD" && b == "USD"){
+    }
+    if (a == "VND" && b == "VND") {
         ketqua = x.value
     }
-    alert(ketqua)
+    if (a == "USD" && b == "USD") {
+        ketqua = x.value``
+    }
+    var y=document.getElementById('sotien');
+    y.innerHTML=("Result:"+" "+ketqua);
 }
